@@ -18,7 +18,7 @@ app.use(express.json()); // parse json data
 
 // CORS
 const corsOptions = {
-	origin: [process.env.CLIENT_URL || "http://localhost:4000"],
+	origin: [process.env.CLIENT_URL || "http://localhost:4000", "http://localhost:5173"],
 	credentials: true,
 	optionsSuccessStatus: 200
 }
