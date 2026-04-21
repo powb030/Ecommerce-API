@@ -18,7 +18,7 @@ app.use(express.json()); // parse json data
 
 // CORS
 const corsOptions = {
-	origin: [process.env.CLIENT_URL || "http://localhost:4000", "http://localhost:5173"],
+	origin: [process.env.CLIENT_URL || "http://localhost:4000", "http://localhost:5173", "https://ecommerce-api-ubqc.onrender.com"],
 	credentials: true,
 	optionsSuccessStatus: 200
 }
