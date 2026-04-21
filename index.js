@@ -18,10 +18,10 @@ app.use(express.json()); // parse json data
 
 // CORS
 const corsOptions = {
-	origin: [process.env.CLIENT_URL || "http://localhost:4000", "http://localhost:5173", "https://ecommerce-fullstack-myizi4zn5-powb030s-projects.vercel.app", "https://ecommerce-fullstack-nu.vercel.app"],
-	credentials: true,
-	optionsSuccessStatus: 200
-}
+  origin: "*",
+  credentials: false,
+  optionsSuccessStatus: 200
+};
 
 app.use(cors(corsOptions));
 
